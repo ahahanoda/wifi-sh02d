@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Unzip sources
+        run: unzip -o wifivoice.zip
+
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
